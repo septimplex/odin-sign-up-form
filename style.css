@@ -63,7 +63,6 @@ img{
 }
 
 .form-box input{
-    width:fit-content;
     height: 30px;
     width: 250px;
     background-color: #d4902f;
@@ -107,29 +106,166 @@ input:focus{
     outline: 0;
 }
 
-@media only screen and (max-width: 1405.56px){
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #d4902f inset !important;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (min-width: 280px) and (max-width: 700px){
     body{
+        overflow-y: scroll; 
+        overflow-x: hidden; 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .form-2{
-        flex-wrap: wrap;
-        gap:10px;
+
+    #logo{
+        width: 100%;
+        margin-top: 0;    
     }
 
     #left-side{
-        width: 100%;
+        width: 100vw;
         height: 50vh;
-        background-size:90%;
+    }
+
+    #right-side{
+        width: 100vw;
         
+        
+    }
+
+    .form-2{
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: center;
+    }
+
+    #right-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #right-end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 1172px){
+    body{
+        overflow-y: scroll; 
+        overflow-x: hidden; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #logo{
         width: 100%;
-        margin-top: 0; 
+        margin-top: 0;    
+    }
+
+    #left-side{
+        width: 100vw;
+        height: 50vh;
         
+    }
+
+    #right-top{
+        padding: 50px 100px;
+        
+    }
+
+    #right-side{
+        width: fit-content;
+        
+    }
+
+    .form-2{
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: center;
+    }
+
+    #right-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #right-end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-box input{
+        width: 400px;
     }
 }
 
+
+@media only screen and (height <= 691px) and (width>1172px){
+    body{
+        overflow-y: scroll; 
+        overflow-x: hidden; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        width: 100%;
+        margin-top: 0;    
+    }
+
+    #left-side{
+        width: 100vw;
+        height: 50vh;
+        
+    }
+
+    #right-top{
+        padding: 50px 100px;
+        
+    }
+
+    #right-side{
+        width: fit-content;
+        
+    }
+
+    .form-2{
+        flex-wrap: wrap;
+        gap:10%;
+        justify-content: center;
+    }
+
+    #right-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #right-end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-box input{
+        width: 400px;
+        
+    }
+}
