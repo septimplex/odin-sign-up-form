@@ -1,7 +1,6 @@
 let inputs = document.querySelectorAll("input");
 console.log("testing");
 
-/*
 inputs.forEach((element) => {
     element.addEventListener("change", e =>{
         let inputValue = e.target.value;
@@ -123,4 +122,3 @@ function validatePhone(phone){
         return false;
     }
 }
-*/
