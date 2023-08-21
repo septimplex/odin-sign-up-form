@@ -24,7 +24,7 @@ inputs.forEach((element) => {
             }
     
             else{
-                pFromCurrent.innerText = "Name has to be longer than 1 characters.";
+                pFromCurrent.innerText = "Name has to be longer than 1 character.";
                 e.target.style.boxShadow = "0 0 2px 1px red";
                 e.target.style.border = "1px red solid";
             } 
