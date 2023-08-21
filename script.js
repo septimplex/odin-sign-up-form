@@ -1,5 +1,4 @@
 let inputs = document.querySelectorAll("input");
-console.log("testing");
 
 inputs.forEach((element) => {
     element.addEventListener("change", e =>{
