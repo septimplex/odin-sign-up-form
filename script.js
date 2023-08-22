@@ -97,7 +97,6 @@ inputs.forEach((element) => {
                 e.target.style.boxShadow = "0 0 2px 1px red";
                 e.target.style.border = "1px red solid";
             }
-            console.log(pass, pass.value);
         }
         
     });
